@@ -1,0 +1,11 @@
+user_input = input("Enter IP address: ")
+octets = user_input.split('.')
+
+print("\n")
+print("{:^15}{:^15}{:^15}{:^15}".format('Octet1','Octet2','Octet3','Octet4'))
+print('-' * 80)
+print("{:^15}{:^15}{:^15}{:^15}".format(octets[0], octets[1], octets[2], octets[3]))
+print("{:^15}{:^15}{:^15}{:^15}".format(bin(int(octets[0])), bin(int(octets[1])), bin(int(octets[2])), bin(int(octets[3]))))
+print("{:^15}{:^15}{:^15}{:^15}".format(hex(int(octets[0])), hex(int(octets[1])), hex(int(octets[2])), hex(int(octets[3]))))
+print('-' * 80)
+print("\n")
